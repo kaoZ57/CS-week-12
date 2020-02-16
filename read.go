@@ -6,3 +6,7 @@ import (
 	"path/filepath"
 	"regexp"
 )
+
+func main() {
+	fmt.Println(checkExt(".txt"))
+}
