@@ -16,3 +16,19 @@ func readtxt() []os.FileInfo {
 
 	return files
 }
+
+func openreadtext() {
+	files := readtxt()
+	for _, file := range files {
+		content, err := ioutil.ReadFile(fmt.Sprint("TXT/", file))
+		if err != nil {
+			log.Fatal(err)
+		}
+		re := regexp.MustCompile(`[Atiwan]\w+/g`)
+		cresultName, _ := regexp.MatchString(content)
+		retur
+	}
+
+	//fmt.Printf("File contents: %s", content)
+}
+
