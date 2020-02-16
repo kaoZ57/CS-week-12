@@ -10,3 +10,8 @@ import (
 func randomInt(min, max int) int {
     return min + rand.Intn(max-min)
 }
+
+func main() {
+    rand.Seed(time.Now().UnixNano())
+    fmt.Println(randomInt(1, 52)) //get an int in the 1...10 range
+}
