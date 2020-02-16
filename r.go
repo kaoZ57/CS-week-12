@@ -11,3 +11,6 @@ func walkFn(path string, info os.FileInfo , err error) error {
 	return	 nil		
 }
 
+func main()  {
+	filepath.Walk(".",walkFn)
+}
